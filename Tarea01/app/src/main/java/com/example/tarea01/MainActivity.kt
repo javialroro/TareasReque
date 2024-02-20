@@ -1,6 +1,7 @@
 package com.example.tarea01
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -17,6 +18,22 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout)
 
+    }
+
+    fun botonAgregar(view: View) {
+        setContentView(R.layout.agregar)
+    }
+
+    fun botonConsultar(view: View) {
+        setContentView(R.layout.consultar)
+    }
+
+    fun botonEliminar(view: View) {
+        setContentView(R.layout.eliminar)
+    }
+
+    fun botonModificar(view: View) {
+        setContentView(R.layout.modificar)
     }
 }
 

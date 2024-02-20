@@ -4,4 +4,10 @@
     <string name="botonConsultar">Consultar Productos</string>
     <string name="botonModificar">Modificar Productos</string>
     <string name="botonEliminar">Eliminar Productos</string>
+
+    <string name="labelAgregar">Agregar Productos</string>
+    <string name="labelConsultar">Consultar Productos</string>
+    <string name="labelEliminar">Eliminar Productos</string>
+    <string name="labelModificar">Modificar Productos</string>
+
 </resources>
