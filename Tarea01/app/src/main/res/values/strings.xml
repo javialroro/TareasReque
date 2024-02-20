@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Tarea 01</string>
-    <string name="botonAgregar">Agregar Producto</string>
-    <string name="botonConsultar">Consultar Producto</string>
-    <string name="botonModificar">Modificar Producto</string>
-    <string name="botonEliminar">Eliminar Producto</string>
+    <string name="botonAgregar">Agregar Productos</string>
+    <string name="botonConsultar">Consultar Productos</string>
+    <string name="botonModificar">Modificar Productos</string>
+    <string name="botonEliminar">Eliminar Productos</string>
 </resources>
