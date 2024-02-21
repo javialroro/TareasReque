@@ -9,7 +9,7 @@ class Producto(
     var cantidad: Int
 ) {
     fun imprimirDetalles(): String {
-        return "Nombre: $Nombre, ID: $id"
+        return "Nombre: $Nombre\nID: $id\nCantidad vendidos: $cantVendidos\nPrecio costo: $precioCosto\nPrecio venta: $precioVenta\nCantidad: $cantidad"
     }
     // Este es el constructor primario de la clase Producto
     // Los parámetros se declaran directamente en la declaración de la clase

@@ -1,8 +1,11 @@
 package com.example.tarea01
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -27,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         intent.setClass(this@MainActivity,Consultar::class.java)
         startActivity(intent)
     }
+
 
     fun abrirEliminar(view: View){
         val intent = Intent()
