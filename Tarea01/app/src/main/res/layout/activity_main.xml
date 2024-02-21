@@ -24,7 +24,7 @@
         android:id="@+id/botonConsultar"
         android:layout_width="178dp"
         android:layout_height="55dp"
-        android:onClick="abrirConsultar"
+        android:onClick="verProductos"
         android:text="@string/botonConsultar"
         app:layout_constraintBottom_toTopOf="@+id/botonEliminar"
         app:layout_constraintEnd_toEndOf="parent"

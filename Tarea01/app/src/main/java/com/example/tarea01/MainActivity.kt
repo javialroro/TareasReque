@@ -4,9 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import java.io.Serializable
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -35,6 +38,22 @@ class MainActivity : AppCompatActivity() {
         intent.setClass(this@MainActivity,Modificar::class.java)
         startActivity(intent)
     }
+
+    fun verProductos(view: View) {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Productos")
+
+        val mensaje = StringBuilder()
+        mensaje.append("Productos en la base de datos: \n")
+        for (producto in ProductosSingleton.productos) {
+            mensaje.append(producto.imprimirDetalles())
+        }
+
+        builder.setMessage(mensaje.toString())
+        builder.setPositiveButton("OK", null)
+        builder.show()
+    }
+
 
 }
 
