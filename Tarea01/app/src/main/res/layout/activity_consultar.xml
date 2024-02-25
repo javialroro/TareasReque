@@ -13,6 +13,17 @@
         android:layout_height="wrap_content"
         android:text="@string/labelConsultar" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba la cantidad o precio que desea consultar" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <ScrollView
         android:layout_width="406dp"
         android:layout_height="433dp">
@@ -22,21 +33,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/id"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="ID" />
-            </com.google.android.material.textfield.TextInputLayout>
-
             <TextView
                 android:id="@+id/eliminadoText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="435dp"
                 android:text="TextView" />
         </LinearLayout>
     </ScrollView>
@@ -45,6 +45,27 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="consultarProducto"
-        android:text="Consultar" />
+        android:onClick="consultarProductos"
+        android:text="Consultar Todos" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="consultarProductoPorPrecio"
+        android:text="Consultar por Precio" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="consultarProductoPorCantidad"
+        android:text="Consultar por Cantidad" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="consultarProductoPorCantidadVendidos"
+        android:text="Consultar por Cantidad Vendidos" />
 </LinearLayout>
