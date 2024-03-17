@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:title="Home" />
+            android:id="@+id/nav_CRUD"
+            android:title="CRUD" />
         <item
-            android:id="@+id/nav_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_ferreteriasCerca"
+            android:title="Ver Ferreterias Cerca" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_ProductoFerreteria"
+            android:title="Ver Productos por Ferreteria" />
     </group>
 </menu>

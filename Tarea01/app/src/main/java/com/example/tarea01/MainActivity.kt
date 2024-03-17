@@ -1,19 +1,15 @@
 package com.example.tarea01
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
-import java.io.Serializable
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,17 +38,20 @@ class MainActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener { menuItem ->
             // Acciones al hacer clic en un elemento del menú
             when (menuItem.itemId) {
-                R.id.nav_home -> {
-                    // Acción para el elemento "Home"
-                    Toast.makeText(this, "Home seleccionado", Toast.LENGTH_SHORT).show()
+                R.id.nav_CRUD -> {
+                    val intent = Intent()
+                    intent.setClass(this@MainActivity,MainActivity::class.java)
+                    startActivity(intent)
                     true
                 }
-                R.id.nav_gallery -> {
+                R.id.nav_ferreteriasCerca -> {
                     // Acción para el elemento "Gallery"
-                    Toast.makeText(this, "Gallery seleccionado", Toast.LENGTH_SHORT).show()
+                    val intent = Intent()
+                    intent.setClass(this@MainActivity,FerreteriasCerca::class.java)
+                    startActivity(intent)
                     true
                 }
-                R.id.nav_slideshow -> {
+                R.id.nav_ProductoFerreteria -> {
                     // Acción para el elemento "Slideshow"
                     Toast.makeText(this, "Slideshow seleccionado", Toast.LENGTH_SHORT).show()
                     true
