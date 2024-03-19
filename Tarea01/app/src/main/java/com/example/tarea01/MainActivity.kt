@@ -52,8 +52,10 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_ProductoFerreteria -> {
-                    // Acción para el elemento "Slideshow"
-                    Toast.makeText(this, "Slideshow seleccionado", Toast.LENGTH_SHORT).show()
+                    // Acción para el elemento "Gallery"
+                    val intent = Intent()
+                    intent.setClass(this@MainActivity,ProductoFerreteria::class.java)
+                    startActivity(intent)
                     true
                 }
                 else -> false
