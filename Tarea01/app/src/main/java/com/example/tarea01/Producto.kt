@@ -6,10 +6,15 @@ class Producto(
     var cantVendidos: Int,
     var precioCosto: Int,
     var precioVenta: Int,
-    var cantidad: Int
+    var cantidad: Int,
+    var ferreteria: String
 ) {
     fun imprimirDetalles(): String {
-        return "Nombre: $Nombre\nID: $id\nCantidad vendidos: $cantVendidos\nPrecio costo: $precioCosto\nPrecio venta: $precioVenta\nCantidad: $cantidad"
+        return "Nombre: $Nombre\nID: $id\nCantidad vendidos: $cantVendidos\nPrecio costo: $precioCosto\nPrecio venta: $precioVenta\nCantidad: $cantidad\nFerretería: $ferreteria"
+    }
+
+    fun asignarFerreteria(ferreteria: String){
+        this.ferreteria = ferreteria
     }
 
     fun modificarDatos(nuevoPrecioCosto: Int, nuevoPrecioVenta: Int, nuevaCantidad: Int) {

@@ -38,9 +38,6 @@ class FerreteriasCerca : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ferreterias_cerca)
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
-
-        Places.initialize(this, "AIzaSyBr48ySTq8McOJ03k6DRfmc1v7RgxlqQOI")
-        val placesClient: PlacesClient = Places.createClient(this)
         createMapFragment()
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
@@ -98,7 +95,6 @@ class FerreteriasCerca : AppCompatActivity(), OnMapReadyCallback {
     }
 
     private suspend fun makeApiCall(latLng: LatLng) {
-        val placesArray = ArrayList<Place>()
         val apiKey = getString(R.string.google_maps_key)
         val request = Request.Builder().url("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latLng.latitude},${latLng.longitude}&radius=1500&type=hardware_store&key=$apiKey")
             .build()

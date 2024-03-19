@@ -129,14 +129,44 @@
                                 android:layout_height="wrap_content"
                                 android:hint="..." />
 
-                            <Button
-                                android:id="@+id/button"
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="32dp"
-                                android:layout_weight="1"
-                                android:hint="..."
-                                android:onClick="agregarProducto"
-                                android:text="Agregar" />
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    android:id="@+id/button6"
+                                    android:layout_width="435dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:onClick="asignarFerreteria1"
+                                    android:text="Asignar Ferreteria 1" />
+
+                                <Button
+                                    android:id="@+id/button8"
+                                    android:layout_width="425dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:onClick="asignarFerreteria2"
+                                    android:text="Asignar Ferreteria 2" />
+
+                                <Button
+                                    android:id="@+id/button9"
+                                    android:layout_width="422dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:onClick="asignarFerreteria3"
+                                    android:text="Asignar Ferreteria 3" />
+
+                                <Button
+                                    android:id="@+id/button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="32dp"
+                                    android:layout_weight="1"
+                                    android:hint="..."
+                                    android:onClick="agregarProducto"
+                                    android:text="Agregar" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
                         </com.google.android.material.textfield.TextInputLayout>
                     </com.google.android.material.textfield.TextInputLayout>
                 </com.google.android.material.textfield.TextInputLayout>

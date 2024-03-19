@@ -8,6 +8,7 @@ import androidx.appcompat.app.AlertDialog
 import com.google.android.material.textfield.TextInputEditText
 
 class Agregar : AppCompatActivity() {
+    var ferreteria = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         try {
             super.onCreate(savedInstanceState)
@@ -26,6 +27,34 @@ class Agregar : AppCompatActivity() {
         }
     }
 
+    fun asignarFerreteria1(view: View) {
+        this.ferreteria = "Ferretería 1"
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Success")
+        builder.setMessage("Ferretería asignada correctamente")
+        builder.setPositiveButton("OK", null)
+        builder.show()
+    }
+
+    fun asignarFerreteria2(view: View) {
+        this.ferreteria = "Ferretería 2"
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Success")
+        builder.setMessage("Ferretería asignada correctamente")
+        builder.setPositiveButton("OK", null)
+        builder.show()
+    }
+
+    fun asignarFerreteria3(view: View) {
+        this.ferreteria = "Ferretería 3"
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Success")
+        builder.setMessage("Ferretería asignada correctamente")
+        builder.setPositiveButton("OK", null)
+        builder.show()
+    }
+
+
     fun agregarProducto(view: View) {
         // Obtener los valores de la interfaz de usuario
         val id = findViewById<TextInputEditText>(R.id.id).text.toString()
@@ -37,9 +66,9 @@ class Agregar : AppCompatActivity() {
 
         try {
             // Verificar que los valores no sean nulos
-            if (precioCostos != null && precioVenta != null && cantidadVendidos != null && cantidad != null) {
+            if (precioCostos != null && precioVenta != null && cantidadVendidos != null && cantidad != null && ferreteria != "") {
                 // Crear un nuevo producto
-                val producto = Producto(id, nombre, precioCostos, precioVenta, cantidadVendidos, cantidad)
+                val producto = Producto(id, nombre, precioCostos, precioVenta, cantidadVendidos, cantidad,ferreteria)
 
                 // Agregar el producto a la base de datos (en este caso, a la MainActivity)
                 ProductosSingleton.agregarProducto(producto)
